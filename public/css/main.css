@@ -1,0 +1,19 @@
+body{
+    font-family: 'Sahel SMD';
+    font-size: 14px;
+}
+.card-center {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+.bg-pbg{
+    background-color: #3c69b2;
+}
+.material-icons { font-size: 24px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons{vertical-align: middle; }
+

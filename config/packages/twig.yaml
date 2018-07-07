@@ -1,0 +1,19 @@
+twig:
+    paths: ['%kernel.project_dir%/templates']
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
+    form_themes: ['bootstrap_4_layout.html.twig',
+                  'Form/Type/Userlist.html.twig',
+                  'Form/Type/Username.html.twig',
+                  'Form/Type/Toggle.html.twig',
+                  'Form/Type/Jdate.html.twig',
+                  'Form/Type/money.html.twig',
+                  'Form/Type/Numbermask.html.twig',
+                  'Form/Type/autocomplete.html.twig',
+                  'Form/Type/filebox.html.twig'
+                  ]
+    globals:
+          userMgr: "@userMgr"
+          jdateMgr: "@jdateMgr"
+          messageMgr: "@messageMgr"
+          entityMgr:  "@entityMgr"
