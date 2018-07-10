@@ -1,0 +1,9 @@
+entity:
+      name: "App:SysUser"
+items:
+    userName:
+        title: "نام کاربری"
+        type: "TextType"
+    password:
+        title: "کلمه عبور"
+        type: "PasswordType"

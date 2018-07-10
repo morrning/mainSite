@@ -1,0 +1,63 @@
+entity:
+    name: "App:ContractContract"
+items:
+    contractName:
+        title: "عنوان قرارداد"
+        type: "TextType"
+    AccountSide:
+        title: "طرف قرارداد"
+        type: "AutocompleteType"
+        pattern: "FiscalAccount"
+    dateStart:
+        title: "تاریخ شروع قرارداد"
+        type: "JdateType"
+    finishDate:
+        title: "تاریخ پایان قرارداد"
+        type: "JdateType"
+    percentHSE:
+        title: "درصد کسر تعهدات ایمنی"
+        type: "NumbermaskType"
+        max-value:  "100"
+        min-value:  "0"
+        label: "%"
+        default: "0.5"
+    percentGWD:
+        title: "درصد کسر حسن انجام کار"
+        type: "NumbermaskType"
+        max-value:  "100"
+        min-value:  "0"
+        label: "%"
+        default: "10"
+    percentTAX:
+        title: "درصد کسر مالیات"
+        type: "NumbermaskType"
+        max-value:  "100"
+        min-value:  "0"
+        label: "%"
+        default: "9"
+    percentInsurance:
+        title: "درصد کسر بیمه"
+        type: "NumbermaskType"
+        max-value:  "100"
+        min-value:  "0"
+        label: "%"
+        default: "5"
+    submitter:
+        type: "ThisRoll"
+    dateSubmit:
+        type: "ThisTime"
+    MKE:
+        title: "مسئول ثبت خدمات اجرایی"
+        type: "AutocompleteType"
+        pattern: "RollList"
+    MKP:
+        title: "مسئول ثبت خدمات پشتیبانی"
+        type: "AutocompleteType"
+        pattern: "RollList"
+    MKM:
+        title: "مسئول ثبت خدمات ماشین‌آلات"
+        type: "AutocompleteType"
+        pattern: "RollList"
+    totalMoney:
+        title: "مبلغ کل قرارداد(ریال)"
+        type: "MoneyType"

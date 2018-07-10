@@ -46,7 +46,20 @@
                 <a class="p-2 text-dark" href="{{ path('starticPageAbout') }}">درباره ما</a>
                 <a class="p-2 text-dark" href="{{ path('starticPageContactUs') }}">تماس با ما</a>
             </nav>
-            <a class="btn btn-outline-primary" href="#">ورود / عضویت</a>
+            {% if userMgr.isLogedIn() == false %}
+                <a class="btn btn-sm btn-outline-success" href="{{ path('userLogin') }}"><span class="material-icons">arrow_back</span> ورود / عضویت </a>
+            {% endif %}
+            {% if userMgr.isLogedIn() == true %}
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="material-icons">account_circle</div>{{ userMgr.GetFullName() }}
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="{{ path('userLogout') }}"><span class="material-icons">assignment_ind</span> پروفایل کاربری </a>
+                        <a class="dropdown-item" href="{{ path('userLogout') }}"><span class="material-icons">exit_to_app</span> خروج </a>
+                    </div>
+                </div>
+            {% endif %}
         </div>
         <main role="main" class="container">
             <div class="SystemModal"></div>

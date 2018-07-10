@@ -1,0 +1,27 @@
+entity:
+    name: "App:ContractContract"
+items:
+    fullName:
+        type: "TextType"
+        title: "نام شرکت / فروشگاه"
+    birthday:
+        type: "JdateType"
+        title: "تاریخ تاسیس"
+    nationalID:
+        title: "کد ملی مرکز تجاری"
+        type: "TextType"
+    bankName:
+        title: "نام بانک"
+        type: "ChoiceType.Array"
+        values: "بانک ملی,بانک ملت,بانک کشاورزی,بانک انصار,بانک صادرات,بانک سپه,بانک توسعه صادرات,بانک شهر,بانک دی,بانک مهر ایران"
+    shabaID:
+        title: "شماره شبا"
+        type: "TextType"
+    bankAccountID:
+        title: "شماره حساب بانکی"
+        type: "TextType"
+    cardID:
+        title: "شماره کارت بانکی"
+        type: "TextType"
+    isPersonal:
+        type: "HiddenType"

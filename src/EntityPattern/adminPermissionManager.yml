@@ -1,0 +1,6 @@
+entity:
+      name: "App:SysUser"
+items:
+    id:
+      title: "گیرنده:"
+      type: "UserlistType"

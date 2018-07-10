@@ -1,0 +1,12 @@
+entity:
+    name: "App:SysRoll"
+items:
+    rollName:
+        title: "نام پست سازمانی"
+        type: "TextType"
+    upperID:
+        title: "مسئول بالادستی"
+        type: "UserlistType"
+    userID:
+        title: "کاربر مسئول سمت"
+        type: "UsernameType"

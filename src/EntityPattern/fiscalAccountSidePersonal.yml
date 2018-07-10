@@ -1,0 +1,36 @@
+entity:
+    name: "App:ContractContract"
+items:
+    fullName:
+        type: "TextType"
+        title: "نام و نام‌خانوادگی"
+    fatherName:
+        type: "TextType"
+        title: "نام پدر"
+    birthday:
+        type: "JdateType"
+        title: "تاریخ تولد"
+    saveLocation:
+        type: "TextType"
+        title: "محل صدور"
+    nationalID:
+        title: "کد ملی"
+        type: "TextType"
+    bankName:
+        title: "نام بانک"
+        type: "ChoiceType.Array"
+        values: "بانک ملی,بانک ملت,بانک کشاورزی,بانک انصار,بانک صادرات,بانک سپه,بانک توسعه صادرات,بانک شهر,بانک دی,بانک مهر ایران"
+    shabaID:
+        title: "شماره شبا"
+        type: "TextType"
+    bankAccountID:
+        title: "شماره حساب بانکی"
+        type: "TextType"
+    cardID:
+        title: "شماره کارت بانکی"
+        type: "TextType"
+    identityID:
+        title: "شماره شناسنامه"
+        type: "TextType"
+    isPersonal:
+        type: "HiddenType"

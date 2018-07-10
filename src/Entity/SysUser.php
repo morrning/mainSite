@@ -29,27 +29,12 @@ class SysUser
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $nameUser;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $familyUser;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
     private $fullName;
 
     /**
-     * @ORM\Column(type="string", length=12)
-     */
-    private $codeMeli;
-
-    /**
      * @ORM\Column(type="string", length=255)
      */
-    private $fatherName;
+    private $groups;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
@@ -59,107 +44,59 @@ class SysUser
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $tel;
+    private $email;
 
     public function getId()
     {
         return $this->id;
     }
 
-    public function getUserName(): ?string
+    /**
+     * @return mixed
+     */
+    public function getUserName()
     {
         return $this->userName;
     }
 
-    public function setUserName(string $userName): self
+    /**
+     * @param mixed $userName
+     */
+    public function setUserName($userName): void
     {
         $this->userName = $userName;
-
-        return $this;
     }
 
-    public function getPassword(): ?string
+    /**
+     * @return mixed
+     */
+    public function getPassword()
     {
         return $this->password;
     }
 
-    public function setPassword(string $password): self
+    /**
+     * @param mixed $password
+     */
+    public function setPassword($password): void
     {
         $this->password = $password;
-
-        return $this;
     }
 
-    public function getNameUser(): ?string
-    {
-        return $this->nameUser;
-    }
-
-    public function setNameUser(string $nameUser): self
-    {
-        $this->nameUser = $nameUser;
-
-        return $this;
-    }
-
-    public function getFamilyUser(): ?string
-    {
-        return $this->familyUser;
-    }
-
-    public function setFamilyUser(string $familyUser): self
-    {
-        $this->familyUser = $familyUser;
-
-        return $this;
-    }
-
-    public function getFullName(): ?string
+    /**
+     * @return mixed
+     */
+    public function getFullName()
     {
         return $this->fullName;
     }
 
-    public function setFullName(string $fullName): self
+    /**
+     * @param mixed $fullName
+     */
+    public function setFullName($fullName): void
     {
         $this->fullName = $fullName;
-
-        return $this;
-    }
-
-    public function getCodeMeli(): ?string
-    {
-        return $this->codeMeli;
-    }
-
-    public function setCodeMeli(string $codeMeli): self
-    {
-        $this->codeMeli = $codeMeli;
-
-        return $this;
-    }
-
-    public function getFatherName(): ?string
-    {
-        return $this->fatherName;
-    }
-
-    public function setFatherName(string $fatherName): self
-    {
-        $this->fatherName = $fatherName;
-
-        return $this;
-    }
-
-    public function getTel(): ?string
-    {
-        return $this->tel;
-    }
-
-    public function setTel(string $tel): self
-    {
-        $this->tel = $tel;
-
-        return $this;
     }
 
     /**
@@ -173,10 +110,43 @@ class SysUser
     /**
      * @param mixed $onlineGUID
      */
-    public function setOnlineGUID($onlineGUID)
+    public function setOnlineGUID($onlineGUID): void
     {
         $this->onlineGUID = $onlineGUID;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param mixed $email
+     */
+    public function setEmail($email): void
+    {
+        $this->email = $email;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGroups()
+    {
+        return $this->groups;
+    }
+
+    /**
+     * @param mixed $groups
+     */
+    public function setGroups($groups): void
+    {
+        $this->groups = $groups;
+    }
+
 
 
 }

@@ -1,0 +1,17 @@
+entity:
+    name: "App:SysSettings"
+items:
+    siteName:
+        title: "نام پورتال"
+        type: "TextType"
+    isOffline:
+        title: "آیا پورتال به صورت موقت از دسترس خارج شود؟"
+        type: "ChoiceType.Array"
+        values: "بله,خیر"
+    prodectKey:
+        title: "لایسنس استفاده از نرم افزار"
+        type: "TextType"
+    backgroundImage:
+        title: "تصویر ضمینه صفحه اصلی"
+        type: "FileboxType"
+        count:  "1"

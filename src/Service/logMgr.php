@@ -28,7 +28,7 @@ class logMgr
         $log = new SysLog();
         $log->setBundlename($bundle);
         $log->setDateSubmit(time());
-        $log->setSubmitter($this->userMgr->GetThisRollInfo()->getId());
+        $log->setSubmitter($this->userMgr->GetThisUserInfo()->getId());
         $log->setLogDes($des);
         $log->setType($type);
         $log->setOptions($options);

@@ -1,0 +1,27 @@
+entity:
+      name: "App:SysUser"
+items:
+    userName:
+        type: "TextType"
+        title: "نام کاربری"
+    nameUser:
+        type: "TextType"
+        title: "نام"
+    familyUser:
+        type: "TextType"
+        title: "نام خانوادگی"
+    codemeli:
+        title: "کد ملی"
+        type: "NumbermaskType"
+        max-value:  "9999999999"
+        min-value:  "1000000000"
+        label: "کد ملی"
+    fatherName:
+        type: "TextType"
+        title: "نام پدر"
+    tel:
+        type: "NumberType"
+        title: "تلفن"
+    password:
+        type: "PasswordType"
+        title: "کلمه عبور"

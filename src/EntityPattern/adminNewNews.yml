@@ -1,0 +1,15 @@
+entity:
+    name: "App:SysNews"
+items:
+    submitter:
+        senderID:
+        type: "ThisRoll"
+    dateSubmit:
+        dateSend:
+        type: "ThisTime"
+    title:
+        type: "TextType"
+        title: "عنوان"
+    body:
+        type: "CKEditorType"
+        title: "متن"

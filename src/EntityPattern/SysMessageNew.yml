@@ -1,0 +1,16 @@
+entity:
+      name: "App:SysMessage"
+items:
+    senderID:
+        type: "ThisRoll"
+    dateSend:
+        type: "ThisTime"
+    reciverID:
+        title: "گیرنده:"
+        type: "UserlistType"
+    title:
+        title: "عنوان:"
+        type: "TextType"
+    body:
+        title: "متن"
+        type: "TextareaType"

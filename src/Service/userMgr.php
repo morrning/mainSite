@@ -30,7 +30,6 @@ class userMgr
      * @return bool
      */
     public function DoUserLogin($username, $password){
-
         $params = ["userName"=>$username,"password"=>md5($password)];
         if($this->em->existByParams('App:SysUser',$params))
         {
@@ -52,6 +51,10 @@ class userMgr
         return false;
     }
 
+    public function GetFullName()
+    {
+        return $this->GetThisUserInfo()->getFullName();
+    }
     public function GetThisUserInfo(){
         $sessionID = $this->session->getId();
         return $this->em->selectOneRow('App:SysUser',['onlineGUID'=>$sessionID]);
@@ -66,91 +69,11 @@ class userMgr
         }
     }
 
-    //--------------------------------------------------------------
-    public function GetThisRollInfo()
-    {
-        if($this->isLogedIn()){
-            $result = $this->GetThisUserInfo();
-            $result = $this->em->selectOneRow('App:SysRoll',['userID'=>$result->getId(),'isDefaultRoll'=>1]);
-            if(! is_null($result))
-                return $result;
-            return null;
-        }
-    }
-
-    public function GetThisRollTitle()
-    {
-        return $this->GetThisRollInfo()->getRollCobTitle();
-    }
-
-    public function GetRollInfo($id)
-    {
-        return $this->em->getById('App:SysRoll',$id);
-    }
-
-    public function GetThisUserRolls()
-    {
-        if($this->isLogedIn()){
-            $result = $this->GetThisUserInfo();
-            $result = $this->em->select('App:SysRoll',['userID'=>$result->getId()]);
-            if(! is_null($result))
-                return $result;
-            return null;
-        }
-    }
-
-    public function changeDefaultRoll($rollID)
-    {
-        if($this->isLogedIn())
-        {
-            $userID = $this->GetThisUserInfo()->getId();
-            if($this->em->existByParams('App:SysRoll',['id'=>$rollID, 'userID'=>$userID]))
-            {
-                $rolls = $this->em->select('App:SysRoll',['userID'=>$userID]);
-                foreach ($rolls as $roll)
-                {
-                    $roll->setIsDefaultRoll(0);
-                    $this->em->update($roll);
-                }
-                $defaultRoll = $this->em->getById('App:SysRoll',$rollID);
-                $defaultRoll->setIsDefaultRoll(1);
-                $this->em->update($defaultRoll);
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public function GetAllFilteredRollsListXML($filter)
-    {
-        if($this->isLogedIn())
-        {
-            $userID = $this->GetThisUserInfo()->getId();
-            if($this->em->existByParams('App:SysRoll',['id'=>$rollID, 'userID'=>$userID]))
-            {
-                $rolls = $this->em->select('App:SysRoll',['userID'=>$userID]);
-                foreach ($rolls as $roll)
-                {
-                    $roll->setIsDefaultRoll(0);
-                    $this->em->update($roll);
-                }
-                $defaultRoll = $this->em->getById('App:SysRoll',$rollID);
-                $defaultRoll->setIsDefaultRoll(1);
-                $this->em->update($defaultRoll);
-                return true;
-            }
-        }
-    }
-
     public function GetAllUserCount()
     {
         return count($this->em->select('App:SysUser'));
     }
 
-    public function GetAllRollCount()
-    {
-        return count($this->em->select('App:SysRoll'));
-    }
     /*
      * ****************** Permission part **********************
      */
@@ -158,7 +81,7 @@ class userMgr
     {
 
         if($this->isLogedIn()){
-            $GroupIDs = $this->getThisRollInfo()->getGroups();
+            $GroupIDs = $this->GetThisUserInfo()->getGroups();
             $groups = explode(',',$GroupIDs);
 
             foreach ($groups as $group)
