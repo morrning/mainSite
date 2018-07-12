@@ -22,4 +22,20 @@ class SpecialpagesController extends Controller
     {
         return $this->render('specialpages/connectUs.html.twig');
     }
+
+    /**
+     * @Route("/page/jobs", name="starticPageJobs")
+     */
+    public function starticPageJobs()
+    {
+        return $this->render('specialpages/jobs.html.twig');
+    }
+
+    /**
+     * @Route("/page/jobs/term", name="starticPageJobsTerm")
+     */
+    public function starticPageJobsTerm()
+    {
+        return $this->render('specialpages/jobsTerm.html.twig');
+    }
 }

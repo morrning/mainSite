@@ -46,4 +46,13 @@ class UserController extends Controller
         $userMgr->DoUserLogout();
         return $this->redirectToRoute('home');
     }
+
+    /**
+     * @Route("/user/register", name="userRegister")
+     */
+    public function userRegister(Request $request,formMgr $formMgr,userMgr $userMgr,logMgr $logMgr)
+    {
+
+
+    }
 }
