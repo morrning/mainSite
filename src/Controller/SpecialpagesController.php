@@ -38,4 +38,20 @@ class SpecialpagesController extends Controller
     {
         return $this->render('specialpages/jobsTerm.html.twig');
     }
+
+    /**
+     * @Route("/findbest/notice/safetynotice", name="staticPageFindBestNotice")
+     */
+    public function staticPageFindBestNotice()
+    {
+        return $this->render('findBest/safetyNotice.html.twig');
+    }
+
+    /**
+     * @Route("/findbest/home", name="staticPageFindBestHome")
+     */
+    public function staticPageFindBestHome()
+    {
+        return $this->render('findBest/home.html.twig');
+    }
 }

@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}بهترین ها راهکار آگهی رایگان{% endblock %}
+
+{% block body %}
+    <div class="row">
+
+        <div class="col-2 card-center">
+            <img src="{{ asset('images/static/find_best_logo.png') }}" class="img-fluid">
+        </div>
+        <div class="col-10 card-center">
+            <h3>بهترین ها:سامانه ثبت رایگان آگهی</h3>
+            <p>
+                بهترین ها مکانی برای ارسال آگهی های شما می باشد.در این سامانه میتوانید بدون واسطه کالای خود را بخرید و بفروشید.
+                <br>
+            </p>
+            <h4>اطلاعات بیشتر</h4>
+            <ul>
+                <li><a href="{{ path('staticPageFindBestNotice') }}">چطور یک خرید امن داشته باشیم؟</a></li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}

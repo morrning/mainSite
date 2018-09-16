@@ -21,7 +21,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/easycorp/easy-log-handler" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fig/link-util" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/friendsofsymfony/ckeditor-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/friendsofsymfony/jsrouting-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jdorn/sql-formatter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/monolog/monolog" />
@@ -38,6 +37,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/simple-cache" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sensio/framework-extra-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/apache-pack" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/asset" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/browser-kit" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/cache" />
@@ -83,7 +83,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/serializer-pack" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/stopwatch" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/swiftmailer-bundle" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/templating" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/test-pack" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/translation" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/twig-bridge" />
@@ -123,7 +122,6 @@
           <root url="file://$MODULE_DIR$/vendor/easycorp/easy-log-handler" />
           <root url="file://$MODULE_DIR$/vendor/egulias/email-validator" />
           <root url="file://$MODULE_DIR$/vendor/fig/link-util" />
-          <root url="file://$MODULE_DIR$/vendor/friendsofsymfony/ckeditor-bundle" />
           <root url="file://$MODULE_DIR$/vendor/friendsofsymfony/jsrouting-bundle" />
           <root url="file://$MODULE_DIR$/vendor/jdorn/sql-formatter" />
           <root url="file://$MODULE_DIR$/vendor/monolog/monolog" />
@@ -140,6 +138,7 @@
           <root url="file://$MODULE_DIR$/vendor/psr/simple-cache" />
           <root url="file://$MODULE_DIR$/vendor/sensio/framework-extra-bundle" />
           <root url="file://$MODULE_DIR$/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/apache-pack" />
           <root url="file://$MODULE_DIR$/vendor/symfony/asset" />
           <root url="file://$MODULE_DIR$/vendor/symfony/browser-kit" />
           <root url="file://$MODULE_DIR$/vendor/symfony/cache" />
@@ -185,7 +184,6 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/serializer-pack" />
           <root url="file://$MODULE_DIR$/vendor/symfony/stopwatch" />
           <root url="file://$MODULE_DIR$/vendor/symfony/swiftmailer-bundle" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/templating" />
           <root url="file://$MODULE_DIR$/vendor/symfony/test-pack" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/vendor/symfony/twig-bridge" />
@@ -221,7 +219,6 @@
           <root url="file://$MODULE_DIR$/vendor/easycorp/easy-log-handler" />
           <root url="file://$MODULE_DIR$/vendor/egulias/email-validator" />
           <root url="file://$MODULE_DIR$/vendor/fig/link-util" />
-          <root url="file://$MODULE_DIR$/vendor/friendsofsymfony/ckeditor-bundle" />
           <root url="file://$MODULE_DIR$/vendor/friendsofsymfony/jsrouting-bundle" />
           <root url="file://$MODULE_DIR$/vendor/jdorn/sql-formatter" />
           <root url="file://$MODULE_DIR$/vendor/monolog/monolog" />
@@ -238,6 +235,7 @@
           <root url="file://$MODULE_DIR$/vendor/psr/simple-cache" />
           <root url="file://$MODULE_DIR$/vendor/sensio/framework-extra-bundle" />
           <root url="file://$MODULE_DIR$/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/apache-pack" />
           <root url="file://$MODULE_DIR$/vendor/symfony/asset" />
           <root url="file://$MODULE_DIR$/vendor/symfony/browser-kit" />
           <root url="file://$MODULE_DIR$/vendor/symfony/cache" />
@@ -283,7 +281,6 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/serializer-pack" />
           <root url="file://$MODULE_DIR$/vendor/symfony/stopwatch" />
           <root url="file://$MODULE_DIR$/vendor/symfony/swiftmailer-bundle" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/templating" />
           <root url="file://$MODULE_DIR$/vendor/symfony/test-pack" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/vendor/symfony/twig-bridge" />
@@ -303,5 +300,6 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="findBest" />
   </component>
 </module>
